@@ -41,6 +41,8 @@ android {
     namespace = "com.owlite.mora"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
+    dynamicFeatures += setOf(":socialExit")
+
     defaultConfig {
         applicationId = "com.owlite.mora"
         minSdk = libs.versions.android.minSdk.get().toInt()
