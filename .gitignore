@@ -1,0 +1,25 @@
+# Kotlin Multiplatform / Gradle
+.gradle/
+build/
+/.kotlin/
+
+# Local configuration
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Android
+*.apk
+*.aab
+*.hprof
+
+# iOS
+*.ipa
+*.dSYM.zip
+Pods/
+
+# Logs
+*.log
