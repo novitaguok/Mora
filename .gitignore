@@ -1,0 +1,65 @@
+# --- General / OS ---
+.DS_Store
+*.swp
+*~
+
+# --- Build Outputs ---
+!src/**/build/
+**/build/
+**/out/
+**/bin/
+**/gen/
+.gradle
+.gradle/
+build/
+
+# --- Android / Kotlin Specific ---
+*.iml
+.kotlin
+.externalNativeBuild
+.cxx
+local.properties
+.navigation/
+captures
+*.dex
+*.class
+
+# --- Packaging ---
+*.apk
+*.ap_
+*.aab
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# --- IntelliJ / Android Studio (.idea) ---
+.idea
+.idea/
+!.idea/codeStyles/
+!.idea/runConfigurations/
+#!.idea/inspectionProfiles/
+
+# --- Xcode / iOS ---
+**/DerivedData/
+xcuserdata
+**/xcuserdata/
+**/*.xcuserstate
+**/*.xcscheme
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# --- CocoaPods ---
+# Only ignore Pods if you want contributors to run 'pod install' themselves
+# (Standard for KMP)
+**/Pods/
+
+# --- Gradle Wrapper ---
+!/gradle/wrapper/gradle-wrapper.jar
+
+# --- Node (if using Kotlin/JS) ---
+node_modules/
