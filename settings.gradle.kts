@@ -15,6 +15,10 @@ pluginManagement {
     }
 }
 
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
+}
+
 dependencyResolutionManagement {
     repositories {
         google {
@@ -28,6 +32,10 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":androidApp")
+include(":core:designsystem")
+include(":core:model")
 include(":sharedLogic")
 include(":sharedUI")
+include(":features:home:ui")

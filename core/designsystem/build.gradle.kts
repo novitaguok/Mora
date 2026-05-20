@@ -10,7 +10,7 @@ plugins {
 kotlin {
 
     androidLibrary {
-        namespace = "com.owlite.socialexit.sharedUI"
+        namespace = "com.owlite.socialexit.core.designsystem"
         compileSdk =
             libs.versions.android.compileSdk
                 .get()
@@ -32,25 +32,14 @@ kotlin {
     }
 
     sourceSets {
-        androidMain.dependencies {
-            implementation(libs.compose.uiToolingPreview)
-            implementation(libs.compose.icons.extended)
-        }
+        androidMain.dependencies {}
         commonMain.dependencies {
-            api(projects.sharedLogic)
-            implementation(projects.features.home.ui)
-            implementation(libs.compose.runtime)
-            implementation(libs.compose.foundation)
-            implementation(libs.compose.material3)
             implementation(libs.compose.ui)
-            implementation(libs.compose.components.resources)
-            implementation(libs.compose.uiToolingPreview)
-            implementation(libs.androidx.lifecycle.viewmodelCompose)
-            implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.compose.material3)
+            implementation(libs.compose.runtime)
+            implementation(libs.androidx.ui.text.google.fonts)
         }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
-        }
+        commonTest.dependencies {}
     }
 }
 

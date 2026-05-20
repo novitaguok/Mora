@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="menu_shield">Shield</string>
+  <string name="menu_scripts">Scripts</string>
+  <string name="menu_history">Shield</string>
+  <string name="menu_settings">Settings</string>
+</resources>
