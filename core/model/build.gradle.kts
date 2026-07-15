@@ -6,18 +6,9 @@ plugins {
 }
 
 kotlin {
-    listOf(
-        iosArm64(),
-        iosSimulatorArm64(),
-    ).forEach { iosTarget ->
-        iosTarget.binaries.framework {
-            baseName = "SharedLogic"
-            isStatic = true
-        }
-    }
 
     androidLibrary {
-        namespace = "com.owlite.socialexit.sharedLogic"
+        namespace = "com.owlite.socialexit.core.model"
         compileSdk =
             libs.versions.android.compileSdk
                 .get()
@@ -39,11 +30,14 @@ kotlin {
     }
 
     sourceSets {
+        androidMain.dependencies {
+        }
         commonMain.dependencies {
-            // put your Multiplatform dependencies here
         }
         commonTest.dependencies {
-            implementation(libs.kotlin.test)
         }
     }
+}
+
+dependencies {
 }
